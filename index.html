@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>حديقة الحيوان</title>
+    <style>
+      /* الصفحة: خلفية خضراء بتدرج */
+      body {
+        background: linear-gradient(#c8e6c9, #fff8e1);
+        font-family: Tahoma, Arial, sans-serif;
+        margin: 0;
+        padding-bottom: 40px;
+      }
+
+      /* ===== الجزء العلوي ===== */
+      .top {
+        text-align: center;
+        padding: 40px 20px 10px;
+      }
+      .top h1 {
+        color: #1b5e20;
+        font-size: 48px;
+        margin: 0 0 10px;
+      }
+      .top p {
+        color: #5d4037;
+        font-size: 22px;
+        margin: 0;
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 25px;
+        border-right: 12px solid #ff9800;
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.03);
+      }
+
+    
+
+      /* ===== الصورة ===== */
+      img {
+        width: 160px;
+        height: 160px;
+        padding: 15px;
+        background-color: #e8f5e9;
+        border: 5px solid #4caf50;
+        border-radius: 50%;
+        animation: move 2s infinite alternate;
+      }
+
+      /* ===== الكلام ===== */
+      .text {
+        width: 50%;
+      }
+      .text h2 {
+        color: #2e7d32;
+        font-size: 34px;
+        margin: 0 0 10px;
+      }
+      .text p {
+        color: #455a64;
+        font-size: 20px;
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      /* ===== الحركة ===== */
+      @keyframes move {
+        to {
+          transform: translateY(-20px) scale(1.1);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top">
+      <h1>🌳 حديقة الحيوان 🌳</h1>
+      <p>تعالوا نتعرف على أصدقائنا الحيوانات</p>
+    </div>
+
+    <div class="card">
+      <img class="animal" src="./lion.jfif" alt="الأسد" />
+      <div class="text">
+        <h2>الأسد</h2>
+        <p>الأسد هو ملك الغابة، وصوته قوي جدًا يسمعه الجميع من بعيد.</p>
+      </div>
+    </div>
+
+    <div class="card ">
+      <img class="animal" src="./فيل.jfif" alt="الفيل" />
+      <div class="text">
+        <h2>الفيل</h2>
+        <p>الفيل أكبر حيوان على اليابسة، وله خرطوم طويل يستخدمه في الشرب والأكل.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="animal" src="./زرافة.jfif" alt="الزرافة" />
+      <div class="text">
+        <h2>الزرافة</h2>
+        <p>الزرافة أطول حيوان في العالم، ورقبتها الطويلة تساعدها تأكل من أعلى الأشجار.</p>
+      </div>
+    </div>
+
+    <div class="card ">
+      <img class="animal" src="./بطريق.jfif" alt="البطريق" />
+      <div class="text">
+        <h2>البطريق</h2>
+        <p>البطريق طائر لا يطير، لكنه يسبح بسرعة كبيرة في الماء البارد.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="animal" src="./قرد.jfif" alt="القرد" />
+      <div class="text">
+        <h2>القرد</h2>
+        <p>القرد حيوان ذكي ويحب القفز بين الأشجار وأكل الموز.</p>
+      </div>
+    </div>
+  </body>
+</html>
